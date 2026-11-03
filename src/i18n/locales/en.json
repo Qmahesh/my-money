@@ -1,0 +1,58 @@
+{
+  "app": { "name": "My Money", "tagline": "Know where your money goes" },
+  "nav": {
+    "home": "Home",
+    "add": "Add",
+    "bills": "Bills",
+    "accounts": "Accounts",
+    "reports": "Reports",
+    "settings": "Settings"
+  },
+  "auth": {
+    "titleSignIn": "Welcome back",
+    "titleSignUp": "Create your account",
+    "email": "Email",
+    "password": "Password",
+    "passwordHint": "At least 8 characters",
+    "submitSignIn": "Sign in",
+    "submitSignUp": "Create account",
+    "switchToSignUp": "New here? Create an account",
+    "switchToSignIn": "Already have an account? Sign in",
+    "checkEmail": "Almost done! Check your email and click the link to confirm your account, then sign in.",
+    "errorGeneric": "Something went wrong. Please try again.",
+    "errorInvalid": "Wrong email or password.",
+    "errorShortPassword": "Password must be at least 8 characters.",
+    "working": "Please wait…"
+  },
+  "home": {
+    "welcome": "Welcome to My Money",
+    "subtitle": "Step 0 is done: the foundation of the app is ready.",
+    "comingTitle": "Coming next",
+    "c1": "Accounts and transactions",
+    "c2": "Bills and recurring income",
+    "c3": "Reports and balances",
+    "c4": "Sharing with family"
+  },
+  "placeholder": {
+    "comingSoon": "Coming soon",
+    "plannedFor": "This screen is built in a later step."
+  },
+  "settings": {
+    "title": "Settings",
+    "language": "Language",
+    "connection": "Server connection",
+    "connected": "Connected",
+    "notConnected": "Cannot reach the server",
+    "notConfigured": "Not configured yet",
+    "checking": "Checking…",
+    "account": "Account",
+    "signedInAs": "Signed in as {{email}}",
+    "signOut": "Sign out",
+    "version": "Version {{version}}"
+  },
+  "setup": {
+    "title": "Almost there",
+    "body": "This app is not connected to its database yet. Add the Supabase URL and key (see README), then reload."
+  },
+  "common": { "loading": "Loading…" }
+}

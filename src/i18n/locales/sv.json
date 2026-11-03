@@ -1,0 +1,58 @@
+{
+  "app": { "name": "My Money", "tagline": "Vet vart dina pengar tar vägen" },
+  "nav": {
+    "home": "Hem",
+    "add": "Lägg till",
+    "bills": "Räkningar",
+    "accounts": "Konton",
+    "reports": "Rapporter",
+    "settings": "Inställningar"
+  },
+  "auth": {
+    "titleSignIn": "Välkommen tillbaka",
+    "titleSignUp": "Skapa ditt konto",
+    "email": "E-post",
+    "password": "Lösenord",
+    "passwordHint": "Minst 8 tecken",
+    "submitSignIn": "Logga in",
+    "submitSignUp": "Skapa konto",
+    "switchToSignUp": "Ny här? Skapa ett konto",
+    "switchToSignIn": "Har du redan ett konto? Logga in",
+    "checkEmail": "Nästan klart! Kolla din e-post och klicka på länken för att bekräfta kontot. Logga sedan in.",
+    "errorGeneric": "Något gick fel. Försök igen.",
+    "errorInvalid": "Fel e-postadress eller lösenord.",
+    "errorShortPassword": "Lösenordet måste vara minst 8 tecken.",
+    "working": "Vänta…"
+  },
+  "home": {
+    "welcome": "Välkommen till My Money",
+    "subtitle": "Steg 0 är klart: appens grund är på plats.",
+    "comingTitle": "Kommer härnäst",
+    "c1": "Konton och transaktioner",
+    "c2": "Räkningar och återkommande inkomster",
+    "c3": "Rapporter och saldon",
+    "c4": "Dela med familjen"
+  },
+  "placeholder": {
+    "comingSoon": "Kommer snart",
+    "plannedFor": "Den här skärmen byggs i ett senare steg."
+  },
+  "settings": {
+    "title": "Inställningar",
+    "language": "Språk",
+    "connection": "Serveranslutning",
+    "connected": "Ansluten",
+    "notConnected": "Kan inte nå servern",
+    "notConfigured": "Inte konfigurerad än",
+    "checking": "Kontrollerar…",
+    "account": "Konto",
+    "signedInAs": "Inloggad som {{email}}",
+    "signOut": "Logga ut",
+    "version": "Version {{version}}"
+  },
+  "setup": {
+    "title": "Nästan där",
+    "body": "Appen är inte ansluten till sin databas än. Lägg till Supabase-URL och nyckel (se README) och ladda om."
+  },
+  "common": { "loading": "Laddar…" }
+}
