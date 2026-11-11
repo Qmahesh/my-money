@@ -1,5 +1,8 @@
 {
-  "app": { "name": "My Money", "tagline": "Vet vart dina pengar tar vägen" },
+  "app": {
+    "name": "My Money",
+    "tagline": "Vet vart dina pengar tar vägen"
+  },
   "nav": {
     "home": "Hem",
     "add": "Lägg till",
@@ -48,11 +51,22 @@
     "account": "Konto",
     "signedInAs": "Inloggad som {{email}}",
     "signOut": "Logga ut",
-    "version": "Version {{version}}"
+    "version": "Version {{version}}",
+    "household": "Hushåll"
   },
   "setup": {
     "title": "Nästan där",
     "body": "Appen är inte ansluten till sin databas än. Lägg till Supabase-URL och nyckel (se README) och ladda om."
   },
-  "common": { "loading": "Laddar…" }
+  "common": {
+    "loading": "Laddar…"
+  },
+  "roles": {
+    "admin": "Administratör",
+    "member": "Medlem (endast visning)"
+  },
+  "household": {
+    "loadError": "Kunde inte läsa in dina data. Kontrollera anslutningen och försök igen.",
+    "retry": "Försök igen"
+  }
 }

@@ -3,8 +3,11 @@
 A simple, private money tracker for a family: income, expenses, bills, transfers and account balances.
 Mobile-first web app (PWA) with English, Sinhala (සිංහල) and Swedish (Svenska) interface.
 
-**Status:** Step 0 of 8 done (foundation: app shell, blue theme, 3 languages, login/register, CI).
+**Status:** Steps 0-1 of 8 done (app shell, 3 languages, login; database + security rules with automated tests).
 See [docs/PROJECT_SPEC.md](docs/PROJECT_SPEC.md) for all decisions and the build plan.
+
+## Database
+See [supabase/README.md](supabase/README.md).
 
 ## Tech
 React + TypeScript (Vite) - PWA - Supabase (Postgres, Auth, Row Level Security) - Vercel - GitHub Actions.

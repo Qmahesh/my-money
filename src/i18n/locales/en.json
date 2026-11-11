@@ -1,5 +1,8 @@
 {
-  "app": { "name": "My Money", "tagline": "Know where your money goes" },
+  "app": {
+    "name": "My Money",
+    "tagline": "Know where your money goes"
+  },
   "nav": {
     "home": "Home",
     "add": "Add",
@@ -48,11 +51,22 @@
     "account": "Account",
     "signedInAs": "Signed in as {{email}}",
     "signOut": "Sign out",
-    "version": "Version {{version}}"
+    "version": "Version {{version}}",
+    "household": "Household"
   },
   "setup": {
     "title": "Almost there",
     "body": "This app is not connected to its database yet. Add the Supabase URL and key (see README), then reload."
   },
-  "common": { "loading": "Loading…" }
+  "common": {
+    "loading": "Loading…"
+  },
+  "roles": {
+    "admin": "Admin",
+    "member": "Member (view only)"
+  },
+  "household": {
+    "loadError": "Could not load your data. Please check your connection and try again.",
+    "retry": "Try again"
+  }
 }

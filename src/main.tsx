@@ -5,12 +5,15 @@ import './i18n'
 import './styles.css'
 import App from './App'
 import { AuthProvider } from './auth/AuthContext'
+import { HouseholdProvider } from './household/HouseholdContext'
 
 createRoot(document.getElementById('root')!).render(
   <StrictMode>
     <BrowserRouter>
       <AuthProvider>
-        <App />
+        <HouseholdProvider>
+          <App />
+        </HouseholdProvider>
       </AuthProvider>
     </BrowserRouter>
   </StrictMode>,

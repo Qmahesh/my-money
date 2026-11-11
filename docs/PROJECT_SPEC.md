@@ -1,7 +1,8 @@
 # Family Money Tracker (PWA) - Project Spec
 
 Single source of truth. Paste this into any new chat/session so work continues without re-explaining.
-Status: planning finished, build not started. Excel prototype (Family_Money_Tracker_v2.xlsx) exists and defines the data model.
+Status: Step 0 (foundation) DONE and deployed. Step 1 (database + security rules) written and tested locally (supabase/migrations). Next: Step 2.
+Excel prototype (Family_Money_Tracker_v2.xlsx) defines the data model.
 
 ## 1. Goal
 Mobile-first web app (PWA) for personal/family income, expenses, bills and account balances.
@@ -61,3 +62,15 @@ Home (this month: received income vs expected, spent, pending bills total, safe-
 
 ## 7. Open items
 - App name; email auth style (password vs magic link); currency list; whether accounts exist (Supabase, GitHub, Vercel/Cloudflare); demo method (per-visitor sandbox recommended); public GitHub repo yes/no.
+
+## 8. Decisions made while building
+- App name: My Money. Blue theme. Default UI language English (si, sv selectable). Login: email + password.
+- Accounts: user adds any number, each with its own currency; first account (lowest sort_order) is the default for new entries.
+- Default categories are seeded per household with name_key (translated in the UI) and start PRIVATE.
+- bootstrap_household() (database function) runs once after first sign-in: creates household, admin membership, default account and categories. Real app: sign-ups will be closed later (invite only).
+- Transfers have their own table (never income/expense). Same-currency transfers must send = receive.
+- Transactions store `currency` copied from the account by a trigger.
+- Member visibility: shared EXPENSES only (category shared, or per-entry override shared). Members also see shared bill templates/amounts/instances. Nothing else.
+- A user can belong to only one household (unique user_id).
+- Deleting the last admin of a household is blocked by the database.
+- Test locally with: bash supabase/tests/run_local.sh

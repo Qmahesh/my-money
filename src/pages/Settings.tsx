@@ -1,6 +1,7 @@
 import { useEffect, useState } from 'react'
 import { useTranslation } from 'react-i18next'
 import { useAuth } from '../auth/AuthContext'
+import { useHousehold } from '../household/HouseholdContext'
 import LanguagePicker from '../components/LanguagePicker'
 import { checkConnection, isConfigured } from '../lib/supabase'
 import { APP_VERSION } from '../version'
@@ -10,6 +11,7 @@ type Status = 'checking' | 'connected' | 'unreachable' | 'unconfigured'
 export default function Settings() {
   const { t } = useTranslation()
   const { session, signOut } = useAuth()
+  const { household } = useHousehold()
   const [status, setStatus] = useState<Status>(isConfigured ? 'checking' : 'unconfigured')
 
   useEffect(() => {
@@ -38,6 +40,15 @@ export default function Settings() {
         <h2>{t('settings.language')}</h2>
         <LanguagePicker />
       </section>
+
+      {household && (
+        <section className="card">
+          <h2>{t('settings.household')}</h2>
+          <p>
+            {household.name} · {t(`roles.${household.role}`)}
+          </p>
+        </section>
+      )}
 
       <section className="card">
         <h2>{t('settings.connection')}</h2>
